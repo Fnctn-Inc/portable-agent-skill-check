@@ -1,0 +1,16 @@
+[project]
+name = "portable-agent-skill-check"
+version = "0.1.0"
+description = "Offline static checks for portable Agent Skills."
+requires-python = ">=3.12"
+license = "MIT"
+dependencies = [
+    "markdown-it-py==4.3.0",
+    "ruamel.yaml==0.19.1",
+]
+
+[dependency-groups]
+dev = ["pytest==9.2.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
